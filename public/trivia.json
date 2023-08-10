@@ -5,33 +5,93 @@
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Who wrote and directed the animated movie &quot;Spirited Away&quot; (2001)?",
-      "correct_answer": "Hayao Miyazaki",
+      "question": "In &quot;Shakugan no Shana&quot; what was the Shana usually referred as?",
+      "correct_answer": "Flame-Haired Burning-Eyed Hunter",
       "incorrect_answers": [
-        "Isao Takahata",
-        "Mamoru Hosoda",
-        "Hidetaka Miyazaki"
+        "Flame Haze",
+        "Flame-Haired Burning-Eyed Haze",
+        "Shana"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In the anime, Full Metal Panic!, who is Kaname&#039;s best friend?",
+      "correct_answer": "Kyoko Tokiwa",
+      "incorrect_answers": [
+        "Melissa Mao",
+        "Ren Mikihara",
+        "Teletha &quot;Tessa&quot; Testarossa"
       ]
     },
     {
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which one of these Manga titles was not created by Urasawa Naoki?",
-      "correct_answer": "My Father&#039;s Journal",
-      "incorrect_answers": ["Billy Bat", "20th Century Boys", "Monster"]
+      "question": "Which band name isn&#039;t a Stand in &quot;JoJo&#039;s Bizzare Adventure&quot;?",
+      "correct_answer": "AC/DC",
+      "incorrect_answers": ["Green Day", "Survivor", "Red Hot Chili Peppers"]
     },
     {
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "easy",
-      "question": "In the anime Black Butler, who is betrothed to be married to Ciel Phantomhive?",
-      "correct_answer": "Elizabeth Midford",
+      "question": "In the anime Seven Deadly Sins what is the name of one of the sins?",
+      "correct_answer": "Diane",
+      "incorrect_answers": ["Sakura", "Ayano", "Sheska"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "boolean",
+      "difficulty": "easy",
+      "question": "In Pok&eacute;mon, Ash&#039;s Pikachu refuses to go into a pokeball.",
+      "correct_answer": "True",
+      "incorrect_answers": ["False"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What year did the anime &quot;Himouto! Umaru-chan&quot; air?",
+      "correct_answer": "2015",
+      "incorrect_answers": ["2014", "2012", "2013"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the &quot;Toaru Majutsu no Index&quot; anime, Touma Kamijou is a level 0 esper that has the ability to do what?",
+      "correct_answer": "Dispell any esper or magical powers",
       "incorrect_answers": [
-        "Rachel Phantomhive",
-        "Alexis Leon Midford",
-        "Angelina Dalles"
+        "Teleport",
+        "Make telepathic communications",
+        "Create electricity from his own body"
       ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In &quot;A Certain Scientific Railgun&quot;, how many &quot;sisters&quot; did Accelerator have to kill to achieve the rumored level 6?",
+      "correct_answer": "20,000",
+      "incorrect_answers": ["128", "10,000", "5,000"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What year did &quot;Attack on Titan&quot; Season 2 begin airing?",
+      "correct_answer": "2017",
+      "incorrect_answers": ["2018", "2019", "2020"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "boolean",
+      "difficulty": "easy",
+      "question": "Kiznaiver is an adaptation of a manga.",
+      "correct_answer": "False",
+      "incorrect_answers": ["True"]
     },
     {
       "category": "Entertainment: Japanese Anime & Manga",
@@ -44,46 +104,74 @@
     {
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
+      "difficulty": "medium",
+      "question": "What year does Part 7 of &quot;JoJo&#039;s Bizarre Adventure&quot; take place in?",
+      "correct_answer": "1890",
+      "incorrect_answers": ["1888", "1999", "2003"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
       "difficulty": "easy",
-      "question": "Who is the armored titan in &quot;Attack On Titan&quot;?",
-      "correct_answer": "Reiner Braun",
-      "incorrect_answers": ["Armin Arlelt", "Mikasa Ackermann", "Eren Jaeger"]
+      "question": "What animation studio produced &quot;Gurren Lagann&quot;?",
+      "correct_answer": "Gainax",
+      "incorrect_answers": ["Kyoto Animation", "Pierrot", "A-1 Pictures"]
     },
     {
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "hard",
-      "question": "Which animation studio animated &quot;Hidamari Sketch&quot;?",
-      "correct_answer": "Shaft",
-      "incorrect_answers": ["Trigger", "Kyoto Animation", "Production I.G"]
+      "question": "Which animation studio animated &quot;Psycho Pass&quot;?",
+      "correct_answer": "Production I.G",
+      "incorrect_answers": ["Kyoto Animation", "Shaft", "Trigger"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which studio animated Afro Samurai?",
+      "correct_answer": "Gonzo",
+      "incorrect_answers": ["Kyoto Animation", "xebec", "Production I.G"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which Pok&eacute;mon and it&#039;s evolutions were banned from appearing in a main role after the Episode 38 Incident?",
+      "correct_answer": "The Porygon Line",
+      "incorrect_answers": [
+        "The Pikachu Line",
+        "The Elekid Line",
+        "The Magby Line"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "boolean",
+      "difficulty": "medium",
+      "question": "In Full Metal Panic!, Whispered are those who are capable of creating Black Technology.",
+      "correct_answer": "True",
+      "incorrect_answers": ["False"]
     },
     {
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "How does the character Dragowizard, Qinus Axia&#039;s from the anime &quot;Buddyfight&quot; differ between the Japanese and English dubs?",
-      "correct_answer": "Different Gender",
+      "question": "Which of the following films was NOT directed by Hayao Miyazaki?",
+      "correct_answer": "Wolf Children",
       "incorrect_answers": [
-        "Different Body Proportions",
-        "Different Backstory",
-        "Different Appearance"
+        "Princess Mononoke",
+        "Spirited Away",
+        "Kiki&#039;s Delivery Service"
       ]
     },
     {
       "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
-      "difficulty": "easy",
-      "question": "What is the name of JoJo&#039;s Bizarre Adventure Part 5?",
-      "correct_answer": "Vento Aureo",
-      "incorrect_answers": ["Vento Oreo", "Vanto Aureo", "Vento Eureo"]
-    },
-    {
-      "category": "Entertainment: Japanese Anime & Manga",
-      "type": "multiple",
-      "difficulty": "hard",
-      "question": "Who is the horror manga artist who made Uzumaki?",
-      "correct_answer": "Junji Ito",
-      "incorrect_answers": ["Kazuo Umezu", "Shintaro Kago", "Sui Ishida"]
+      "difficulty": "medium",
+      "question": "In JoJo&#039;s Bizarre Adventure, who says &quot;Yare yare daze&quot;?",
+      "correct_answer": "Jotaro Kujo",
+      "incorrect_answers": ["Joseph Joestar", "Jolyne Cujoh", "Koichi Hirose"]
     },
     {
       "category": "Entertainment: Japanese Anime & Manga",
