@@ -1,0 +1,97 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who wrote and directed the animated movie &quot;Spirited Away&quot; (2001)?",
+      "correct_answer": "Hayao Miyazaki",
+      "incorrect_answers": [
+        "Isao Takahata",
+        "Mamoru Hosoda",
+        "Hidetaka Miyazaki"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which one of these Manga titles was not created by Urasawa Naoki?",
+      "correct_answer": "My Father&#039;s Journal",
+      "incorrect_answers": ["Billy Bat", "20th Century Boys", "Monster"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the anime Black Butler, who is betrothed to be married to Ciel Phantomhive?",
+      "correct_answer": "Elizabeth Midford",
+      "incorrect_answers": [
+        "Rachel Phantomhive",
+        "Alexis Leon Midford",
+        "Angelina Dalles"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Medaka Kurokami from &quot;Medaka Box&quot; has what abnormality?",
+      "correct_answer": "The End",
+      "incorrect_answers": ["Perfection", "Sandbox", "Fairness"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the armored titan in &quot;Attack On Titan&quot;?",
+      "correct_answer": "Reiner Braun",
+      "incorrect_answers": ["Armin Arlelt", "Mikasa Ackermann", "Eren Jaeger"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which animation studio animated &quot;Hidamari Sketch&quot;?",
+      "correct_answer": "Shaft",
+      "incorrect_answers": ["Trigger", "Kyoto Animation", "Production I.G"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "How does the character Dragowizard, Qinus Axia&#039;s from the anime &quot;Buddyfight&quot; differ between the Japanese and English dubs?",
+      "correct_answer": "Different Gender",
+      "incorrect_answers": [
+        "Different Body Proportions",
+        "Different Backstory",
+        "Different Appearance"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of JoJo&#039;s Bizarre Adventure Part 5?",
+      "correct_answer": "Vento Aureo",
+      "incorrect_answers": ["Vento Oreo", "Vanto Aureo", "Vento Eureo"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Who is the horror manga artist who made Uzumaki?",
+      "correct_answer": "Junji Ito",
+      "incorrect_answers": ["Kazuo Umezu", "Shintaro Kago", "Sui Ishida"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which studio made Cowboy Bebop?",
+      "correct_answer": "Sunrise",
+      "incorrect_answers": ["Bones", "Madhouse", "Pierriot"]
+    }
+  ]
+}
