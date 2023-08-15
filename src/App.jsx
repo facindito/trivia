@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import getQuestions from './services/getQuestions'
+import { Text } from './components/Text'
 
 export default function App () {
   const [questions, setQuestions] = useState([])
@@ -14,18 +15,18 @@ export default function App () {
   }, [])
 
   return (
-    <div className='min-h-screen grid place-content-center p-4 overflow-hidden'>
+    <div className='flex flex-col justify-center items-center min-h-screen max-w-2xl mx-auto p-4'>
       <h1 className='font-bold text-6xl text-center mb-4'>Trivia</h1>
       {
         currentQuestion && (
-          <main className='max-w-4xl m-auto w-full'>
-            <h2 className='max-w-[70ch] text-center mb-4 font-semibold text-2xl'>
+          <main className='min-w-full'>
+            <h2 className='text-center mb-4 font-semibold text-2xl'>
               <Text value={currentQuestion.question} />
             </h2>
-            <ul className='flex flex-col gap-4 justify-center items-center'>
+            <ul className='grid md:grid-cols-2 gap-4'>
               {
                 currentQuestion.answers.map((answer, index) => (
-                  <li key={index} className='w-full'>
+                  <li key={index} className='w-full h-full'>
                     <button className='border rounded-md w-full text-center p-4'>
                       <Text value={answer} />
                     </button>
@@ -33,24 +34,10 @@ export default function App () {
                 ))
               }
             </ul>
+
           </main>
         )
       }
-
     </div>
-  )
-}
-
-function Text ({ value, props }) {
-  const questionText = useRef()
-
-  useEffect(() => {
-    questionText.current.innerHTML = value
-  }, [value])
-  return (
-    <div
-      {...props}
-      ref={questionText}
-    />
   )
 }
