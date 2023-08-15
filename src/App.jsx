@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import getQuestions from './services/getQuestions'
-import { Text } from './components/Text'
+import { Question } from './components/Question'
 
 export default function App () {
   const [questions, setQuestions] = useState([])
@@ -20,21 +20,7 @@ export default function App () {
       {
         currentQuestion && (
           <main className='min-w-full'>
-            <h2 className='text-center mb-4 font-semibold text-2xl'>
-              <Text value={currentQuestion.question} />
-            </h2>
-            <ul className='grid md:grid-cols-2 gap-4'>
-              {
-                currentQuestion.answers.map((answer, index) => (
-                  <li key={index} className='w-full h-full'>
-                    <button className='border rounded-md w-full text-center p-4'>
-                      <Text value={answer} />
-                    </button>
-                  </li>
-                ))
-              }
-            </ul>
-
+            <Question question={currentQuestion} />
           </main>
         )
       }
