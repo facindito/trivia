@@ -1,6 +1,11 @@
+import { useQuestionsStore } from '../store/questions'
 import { Text } from './Text'
 
-export function Question ({ question }) {
+export function Question () {
+  const questions = useQuestionsStore(state => state.questions)
+  const currentQuestion = useQuestionsStore(state => state.currentQuestion)
+  const question = questions[currentQuestion]
+
   return (
     <>
       <h2 className='text-center mb-4 font-semibold text-2xl'>
