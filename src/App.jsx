@@ -1,4 +1,4 @@
-import { Question } from './components/Question'
+import { Game } from './components/Game'
 import { Start } from './components/Start'
 import { useQuestionsStore } from './store/questions'
 
@@ -10,11 +10,7 @@ export default function App () {
       <h1 className='font-bold text-6xl text-center'>Trivia</h1>
       {questions.length === 0 && <Start />}
       {
-        questions.length > 0 && (
-          <main className='min-w-full'>
-            <Question />
-          </main>
-        )
+        questions.length > 0 && <Game />
       }
     </div>
   )
