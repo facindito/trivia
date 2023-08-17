@@ -10,7 +10,7 @@ export function Start () {
   return (
     <button
       onClick={handleClick}
-      className='px-4 py-2 font-semibold bg-[#585FF2] text-[ECECFE] rounded-full'
+      className='px-4 py-2 font-semibold bg-violet-700 text-white rounded-full'
     >
       Start game!
     </button>
