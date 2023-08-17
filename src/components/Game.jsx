@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useQuestionsStore } from '../store/questions'
 import { Next, Previous } from './Icons'
 import { Question } from './Question'
@@ -10,12 +11,22 @@ export function Game () {
 
   const question = questions[currentQuestion]
 
+  useEffect(() => {
+    let interval
+    if (question.selectedAnswer != null && currentQuestion < questions.length - 1) {
+      interval = setInterval(() => {
+        nextQuestion()
+      }, 5000)
+    }
+    return () => clearInterval(interval)
+  }, [question])
+
   return (
     <main className='min-w-full flex flex-col gap-4'>
       <div className='flex justify-between items-center gap-4'>
         <button
           onClick={previousQuestion}
-          className={currentQuestion > 0 && 'hover:text-violet-700'}
+          className={currentQuestion > 0 ? 'hover:text-violet-700' : ''}
           disabled={currentQuestion === 0}
         >
           <Previous />
@@ -25,7 +36,7 @@ export function Game () {
         </p>
         <button
           onClick={nextQuestion}
-          className={currentQuestion < questions.length - 1 && 'hover:text-violet-700'}
+          className={currentQuestion < questions.length - 1 ? 'hover:text-violet-700' : ''}
           disabled={currentQuestion === questions.length - 1}
         >
           <Next />

@@ -11,7 +11,7 @@ export function Question ({ info }) {
 
   return (
     <>
-      <h2 className='backdrop-blur-md bg-white/10 text-center font-semibold text-2xl border-2 border-violet-600 rounded-md p-4'>
+      <h2 className='backdrop-blur-md bg-white/10 text-center font-semibold text-2xl border-2 border-violet-600 rounded-md p-8'>
         <Text value={info.question} />
       </h2>
       <ul className='grid md:grid-cols-2 gap-4'>
