@@ -23,5 +23,19 @@ export const useQuestionsStore = create((set, get) => ({
     }
 
     set({ questions: newQuestions })
+  },
+  nextQuestion: () => {
+    const { currentQuestion, questions } = get()
+    const nextQuestion = currentQuestion + 1
+    if (nextQuestion < questions.length) {
+      set({ currentQuestion: nextQuestion })
+    }
+  },
+  previousQuestion: () => {
+    const { currentQuestion } = get()
+    const previousQuestion = currentQuestion - 1
+    if (previousQuestion > 0) {
+      set({ currentQuestion: previousQuestion })
+    }
   }
 }))
