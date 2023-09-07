@@ -9,9 +9,7 @@ export default function App () {
     <div className='flex flex-col items-center gap-4 min-h-screen max-w-2xl mx-auto p-4'>
       <h1 className='font-bold text-6xl text-center'>Trivia</h1>
       {questions.length === 0 && <Start />}
-      {
-        questions.length > 0 && <Game />
-      }
+      {questions.length > 0 && <Game />}
     </div>
   )
 }

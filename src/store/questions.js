@@ -37,5 +37,8 @@ export const useQuestionsStore = create((set, get) => ({
     if (previousQuestion >= 0) {
       set({ currentQuestion: previousQuestion })
     }
+  },
+  resetGame: () => {
+    set({ questions: [], currentQuestion: 0 })
   }
 }))

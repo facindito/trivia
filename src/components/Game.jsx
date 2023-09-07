@@ -8,6 +8,7 @@ export function Game () {
   const currentQuestion = useQuestionsStore(state => state.currentQuestion)
   const nextQuestion = useQuestionsStore(state => state.nextQuestion)
   const previousQuestion = useQuestionsStore(state => state.previousQuestion)
+  const resetGame = useQuestionsStore(state => state.resetGame)
 
   const question = questions[currentQuestion]
 
@@ -22,8 +23,8 @@ export function Game () {
   }, [question])
 
   return (
-    <main className='min-w-full flex flex-col gap-4'>
-      <div className='flex justify-between items-center gap-4'>
+    <div className='flex-grow min-w-full flex flex-col gap-4'>
+      <header className='flex justify-between items-center gap-4'>
         <button
           onClick={previousQuestion}
           className={currentQuestion > 0 ? 'hover:text-violet-700' : ''}
@@ -41,9 +42,20 @@ export function Game () {
         >
           <Next />
         </button>
-      </div>
+      </header>
 
-      <Question info={question} />
-    </main>
+      <main className='flex-1 flex flex-col gap-4'>
+        <Question className='flex-1' info={question} />
+      </main>
+
+      <footer className='flex'>
+        <button
+          className='ml-auto px-4 py-2 font-semibold bg-red-700 text-white rounded-full'
+          onClick={() => resetGame()}
+        >
+          Reset
+        </button>
+      </footer>
+    </div>
   )
 }
