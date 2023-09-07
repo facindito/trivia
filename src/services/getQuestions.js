@@ -1,6 +1,11 @@
-export default async function getQuestions ({ limit = 10 } = {}) {
+export default async function getQuestions ({ limit = 10, categoryId = '' } = {}) {
   try {
-    const response = await fetch('http://localhost:5173/trivia.json')
+    // Local
+    // const response = await fetch('http://localhost:5173/trivia.json')
+
+    // API
+    const response = await fetch(`https://opentdb.com/api.php?amount=${limit}&category=${categoryId}`)
+
     if (!response.ok) {
       throw new Error('failed to connect API')
     }

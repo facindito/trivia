@@ -1,18 +1,12 @@
-import { useQuestionsStore } from '../store/questions'
+import { Categories } from './Categories'
 
 export function Start () {
-  const getQuestionStore = useQuestionsStore(state => state.getQuestionStore)
-
-  const handleClick = () => {
-    getQuestionStore(10)
-  }
-
   return (
-    <button
-      onClick={handleClick}
-      className='px-4 py-2 font-semibold bg-violet-700 text-white rounded-full'
-    >
-      Start game!
-    </button>
+    <>
+      <h2 className='text-2xl font-semibold my-4'>
+        Click a category and start the game
+      </h2>
+      <Categories />
+    </>
   )
 }

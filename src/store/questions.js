@@ -4,8 +4,8 @@ import getQuestions from '../services/getQuestions'
 export const useQuestionsStore = create((set, get) => ({
   questions: [],
   currentQuestion: 0,
-  getQuestionStore: async (limit) => {
-    const questions = await getQuestions({ limit })
+  getQuestionStore: async ({ limit, categoryId }) => {
+    const questions = await getQuestions({ limit, categoryId })
     set({ questions })
   },
   selectAnswer: (questionId, answerIndex) => {
