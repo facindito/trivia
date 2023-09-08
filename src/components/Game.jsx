@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useQuestionsStore } from '../store/questions'
 import { Question } from './Question'
 import { Footer } from './Footer'
+import { Header } from './Header'
 
 export function Game () {
   const questions = useQuestionsStore(state => state.questions)
@@ -22,7 +23,7 @@ export function Game () {
 
   return (
     <div className='flex-grow min-w-full flex flex-col gap-4'>
-      <Headers />
+      <Header />
       <main className='flex-1 flex flex-col gap-4'>
         <Question info={question} />
       </main>
