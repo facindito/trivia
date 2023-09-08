@@ -7,16 +7,16 @@ export function Categories () {
   const getQuestionStore = useQuestionsStore(state => state.getQuestionStore)
   const [categories, setCategories] = useState([])
 
-  const handleClick = (categoryId) => () => {
-    getQuestionStore({ limit: 10, categoryId })
-  }
-
   useEffect(() => {
     getCategories()
       .then(allCategories => {
         setCategories(allCategories)
       })
   }, [])
+
+  const handleClick = (categoryId) => () => {
+    getQuestionStore({ limit: 10, categoryId })
+  }
 
   return (
     <section className='w-full'>
@@ -30,11 +30,10 @@ export function Categories () {
           </button>
         </li>
         {categories.map(({ id, name }) => {
-          const bgColor = `bg-${COLOR_CATEGORIES[name]}`
           return (
             <li key={id}>
               <button
-                className={`w-full text-center font-semibold py-8 px-2 border-2 rounded-md ${bgColor} bg-opacity-50 hover:scale-105`}
+                className={`w-full text-center font-semibold py-8 px-2 border-2 rounded-md ${COLOR_CATEGORIES[name]} bg-opacity-50 hover:scale-105`}
                 onClick={handleClick(id)}
               >
                 {name}
