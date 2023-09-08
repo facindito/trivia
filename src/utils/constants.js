@@ -24,3 +24,9 @@ export const COLOR_CATEGORIES = {
   'Japanese Anime & Manga': 'bg-red-400',
   'Cartoon & Animations': 'bg-blue-300'
 }
+
+export const DIFFICULTY = {
+  easy: 'fill-green-500',
+  medium: 'fill-orange-500',
+  hard: 'fill-red-500'
+}
