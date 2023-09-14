@@ -5,17 +5,10 @@ export function Header () {
   const questions = useQuestionsStore(state => state.questions)
   const currentQuestion = useQuestionsStore(state => state.currentQuestion)
   const nextQuestion = useQuestionsStore(state => state.nextQuestion)
-  // const previousQuestion = useQuestionsStore(state => state.previousQuestion)
 
   return (
     <header className='flex flex-col gap-4 justify-between items-end md:flex-row md:items-center'>
-      {/* <button
-        onClick={previousQuestion}
-        className={currentQuestion > 0 ? 'hover:text-violet-700' : ''}
-        disabled={currentQuestion === 0}
-      >
-        <Previous />
-      </button> */}
+
       <div className='w-full flex justify-start items-center gap-4'>
         <strong>
           {currentQuestion + 1} of {questions.length}
