@@ -1,10 +1,19 @@
 import { useQuestionsStore } from '../store/questions'
+import { Button } from './Button'
 import { Next } from './Icons'
+import Modal from './ModalStats'
+import { useState } from 'react'
 
 export function Header () {
+  const [showModal, setShowModal] = useState(false)
+
   const questions = useQuestionsStore(state => state.questions)
   const currentQuestion = useQuestionsStore(state => state.currentQuestion)
   const nextQuestion = useQuestionsStore(state => state.nextQuestion)
+
+  const handleClick = () => setShowModal(true)
+
+  const handleClose = () => setShowModal(false)
 
   return (
     <header className='flex flex-col gap-4 justify-between items-end md:flex-row md:items-center'>
@@ -21,15 +30,19 @@ export function Header () {
         </div>
       </div>
 
-      <button
-        onClick={nextQuestion}
-        className='text-base px-4 py-2 border-2 rounded-md flex justify-between items-center gap-2 text-center bg-violet-700 enabled:hover:scale-105'
-        disabled={currentQuestion === questions.length - 1}
-      >
-        Next
-        <Next />
-      </button>
+      {currentQuestion < questions.length - 1 && (
+        <Button onClick={nextQuestion}>
+          Next
+          <Next />
+        </Button>
+      )}
+      {currentQuestion === questions.length - 1 && (
+        <Button onClick={handleClick}>
+          Finish
+        </Button>
+      )}
 
+      {showModal && <Modal onClose={handleClose} />}
     </header>
   )
 }

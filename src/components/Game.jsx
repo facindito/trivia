@@ -16,7 +16,7 @@ export function Game () {
     if (question.selectedAnswer != null && currentQuestion < questions.length - 1) {
       interval = setInterval(() => {
         nextQuestion()
-      }, 5000)
+      }, 30000)
     }
     return () => clearInterval(interval)
   }, [question])
