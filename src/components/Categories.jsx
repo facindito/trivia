@@ -19,7 +19,7 @@ export function Categories () {
   }
 
   return (
-    <section className='w-full'>
+    <section className='w-full' id='categories'>
       <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-4'>
         <li>
           <button

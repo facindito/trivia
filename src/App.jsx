@@ -7,7 +7,6 @@ export default function App () {
 
   return (
     <div className='flex flex-col items-center gap-4 min-h-screen max-w-4xl mx-auto p-4'>
-      <h1 className='font-bold text-6xl text-center'>Trivia</h1>
       {questions.length === 0 && <Start />}
       {questions.length > 0 && <Game />}
     </div>

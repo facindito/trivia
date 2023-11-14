@@ -10,7 +10,7 @@
   color: rgba(255, 255, 255, 0.87);
   /* background-color: #050608; */
   background-color: #351569;
-
+  scroll-behavior: smooth;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
